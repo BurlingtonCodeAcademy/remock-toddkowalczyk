@@ -1,0 +1,237 @@
+/* Use Poppins font unless overriden via another selector */
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+h1 {
+    size: 12pt;
+    color: hsl(224, 36%, 50%);
+}
+
+h2 {
+    font-size: smaller;
+}
+
+.large-image {
+    max-width: 700px;
+}
+
+.home-image {
+    width: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+textarea {
+    width: 350px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+/* Large width double line - page section seperator */
+.large-hr {
+    width: 700px;
+    color: lightgrey;
+}
+
+/* Small width double line - page section seperator */
+.small-hr {
+    width: 300px;
+    color: lightgrey;
+}
+
+.header {
+    font-size: 18pt;
+    text-decoration: none;
+    color: black;
+}
+
+.header:hover {
+    color: red;
+}
+
+.title-header {
+    font-size: 24pt;
+    text-decoration: none;
+    color: hsl(224, 36%, 50%);
+}
+
+.title-header:hover {
+    color: red;
+}
+
+.banner {
+    text-transform:  uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-banner {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+}
+
+.image-pane {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.small-image {
+    max-width: 300px;
+}
+
+.action-button {
+    border: 1px;
+    padding: 5px;
+    background-color: rgb(129, 33, 33);
+    text-transform: uppercase;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+   
+}
+
+.action-button:hover {
+    color: red;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Class for displaying large text seperator */
+.section-quote {
+    display: flex;
+    justify-content: center;
+    background-color:hsl(224, 36%, 50%);
+    color: white;   
+    height: 10vw;
+    font-size: 16px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+/* Container for showing article on left and blog on right */
+.article-blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+
+/* Container for showing blog on left and article content on right */
+.blog-article-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+/* Styling for blog page */
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.blog {
+    width: 300px;
+}
+
+.blog-only {
+    width: 900px;
+}
+
+.article {
+    width: 700px;
+}
+
+/* Date box for Blog section */
+.date-box {
+    border: 1px;
+    padding: 5px;
+    background-color: rgb(74, 72, 72);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 180px
+}
+
+/*  Contact Us section */
+
+#contact-wrapper {
+    display: grid;
+    grid-gap: 5px;    
+    grid-template-columns: 400px 300px 230px;
+    grid-template-rows: 50px 75px 80px 60px;
+    background-color: silver;
+    margin: 60px 60px;
+    padding-right: 150px; 
+    padding-left: 100px;
+}
+
+#contact-heading {
+    grid-column: 2/4;
+    grid-row: 1;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#contact-form {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#send-message {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+textarea:focus {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+#contact-name.hover {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+#contact-intro {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+#contact-address {
+    grid-column: 2;
+    grid-row: 3;
+    line-height: 60%
+}
+
+#contact-social {
+    grid-column: 3;
+    grid-row: 3;
+    line-height: 60%
+
+}
+
